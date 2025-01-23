@@ -1,0 +1,96 @@
+<!DOCTYPE html>:
+
+Diz ao navegador que o documento está usando o padrão HTML5.
+<html lang="en">:
+
+A tag <html> é o elemento raiz do documento HTML.
+O atributo lang="en" especifica que o idioma da página é inglês.
+<head>:
+
+Contém informações meta sobre o documento (não visíveis na página), como título, charset e link para o CSS.
+<meta charset="UTF-8">:
+
+Define o conjunto de caracteres como UTF-8, que suporta quase todos os caracteres do mundo.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+
+Garante que a página seja responsiva, ajustando-se ao tamanho da tela do dispositivo.
+<title>Tabela Responsiva</title>:
+
+Define o título da página, exibido na aba do navegador.
+<link rel="stylesheet" href="style.css">:
+
+Importa o arquivo CSS externo chamado style.css.
+<body>:
+
+Contém o conteúdo visível da página.
+<h1>:
+
+Um título de nível 1 para descrever a página: "Tabela Responsiva".
+<table>:
+
+Define uma tabela.
+<tr>:
+
+Representa uma linha da tabela.
+<th>:
+
+Define uma célula de cabeçalho da tabela (negrito e centralizado por padrão).
+<td>:
+
+Representa uma célula de dados da tabela.
+Arquivo CSS (style.css)
+css
+Copy
+Edit
+/* Estilo base da tabela */
+table {
+  width: 100%; /* A tabela ocupará 100% da largura do container */
+  border-collapse: collapse; /* Remove espaços entre bordas */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Adiciona uma borda cinza às células */
+  padding: 10px; /* Adiciona um espaço interno de 10px nas células */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  table {
+    display: block; /* A tabela se torna um elemento de bloco */
+  }
+  tr {
+    display: flex; /* Cada linha vira um container flexível */
+    flex-direction: column; /* Os elementos da linha ficam empilhados */
+  }
+  th, td {
+    display: block; /* Cada célula ocupa toda a largura */
+    width: 100%; /* A largura de cada célula é de 100% */
+  }
+}
+table:
+
+Define o estilo geral da tabela:
+width: 100%;: Faz com que a tabela se ajuste à largura do container (normalmente a página inteira).
+border-collapse: collapse;: Junta as bordas das células para evitar espaços entre elas.
+th, td:
+
+Estilo para as células:
+border: 1px solid #ddd;: Cria bordas finas cinzas ao redor de cada célula.
+padding: 10px;: Adiciona um espaço interno para o texto não ficar colado nas bordas.
+text-align: left;: Alinha o texto à esquerda (padrão para <td>).
+@media (max-width: 600px):
+
+Media query que aplica estilos diferentes para telas menores que 600px de largura.
+Responsividade:
+table { display: block; }: Faz a tabela se comportar como um elemento de bloco.
+tr { display: flex; flex-direction: column; }: Transforma cada linha em um "bloco flexível" e empilha as células verticalmente.
+th, td { display: block; width: 100%; }: Faz com que as células ocupem 100% da largura disponível.
+O que acontece em diferentes tamanhos de tela:
+Em telas grandes (largura maior que 600px):
+
+A tabela aparece normalmente com duas colunas e uma linha.
+Em telas pequenas (largura menor ou igual a 600px):
+
+A tabela muda para um layout "empilhado":
+Cada coluna da linha aparece como um bloco, um embaixo do outro.

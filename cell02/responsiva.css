@@ -1,0 +1,27 @@
+/* Estilo base da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 600px) {
+    table {
+      display: block;
+    }
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+    th, td {
+      display: block;
+      width: 100%;
+    }
+  }
+  
