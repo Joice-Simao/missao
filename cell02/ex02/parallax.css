@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.background-image {
+    background-size: cover;
+    background-position: center;
+}
+.parte1 {
+    background-image: url('https://i0.statig.com.br/bancodeimagens/5t/h7/8v/5th78vhs4x0od12627ueuhor2.jpg');
+}
+.section2 {
+    background-color: black;
+}
+.section3 {
+    background-image: url('https://www.pensarcontemporaneo.com/content/uploads/2021/06/60be1d230be50-scaled.jpeg');
+}
+.message {
+    padding: 20px;
+    border-radius: 10px;
+}

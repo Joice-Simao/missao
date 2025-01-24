@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabela Responsiva em HTML Puro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .coluna1 {
+            background-color: #00e1ff; 
+        }
+        .coluna2 {
+            background-color: #9a03f8; 
+        }
+        
+    </style>
 </head>
 <body>
-  <h1>Tabela Responsiva em HTML Puro</h1>
-
-  <!-- Criação de um container com barra de rolagem horizontal -->
-  <div>
-    <!-- Use o atributo 'width' para definir um tamanho maior que o da tela -->
-    <table border="1" width="1000">
-      <thead>
+    <table>
         <tr>
-          <th>Nome</th>
-          <th>Idade</th>
-          <th>Profissão</th>
-          <th>Cidade</th>
+            <td class="coluna1">Primeira Coluna</td>
+            <td class="coluna2">Segunda Coluna</td>
         </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Maria</td>
-          <td>30</td>
-          <td>Engenheira</td>
-          <td>São Paulo</td>
-        </tr>
-        <tr>
-          <td>João</td>
-          <td>25</td>
-          <td>Designer</td>
-          <td>Rio de Janeiro</td>
-        </tr>
-        <tr>
-          <td>Pedro</td>
-          <td>40</td>
-          <td>Professor</td>
-          <td>Belo Horizonte</td>
-        </tr>
-      </tbody>
     </table>
-  </div>
-
-  <!-- Use a tag <br> para espaçamento -->
-  <br>
-
-  <p>Redimensione a janela do navegador para ver a barra de rolagem horizontal.</p>
 </body>
 </html>
